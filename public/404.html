@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Sayfa Bulunamadı | Hesaplama Araçları</title>
+    <meta name="description" content="Aradığınız sayfa bulunamadı. Hesaplama Araçları ana sayfasına dönün.">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 0 8px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .links {
+            margin-top: 2rem;
+        }
+        .popular-links {
+            margin-top: 3rem;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+        .popular-links h3 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        .popular-links a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: opacity 0.3s ease;
+        }
+        .popular-links a:hover {
+            opacity: 0.8;
+        }
+        .popular-links a:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>404</h1>
+        <h2>Sayfa Bulunamadı</h2>
+        <p>Aradığınız sayfa mevcut değil veya taşınmış olabilir. Ana sayfamızdan ihtiyacınız olan hesaplama aracını bulabilirsiniz.</p>
+        
+        <div class="links">
+            <a href="/" class="btn">Ana Sayfa</a>
+            <a href="/kredi" class="btn">Kredi Hesaplama</a>
+            <a href="/matematik" class="btn">Matematik</a>
+        </div>
+        
+        <div class="popular-links">
+            <h3>Popüler Hesaplama Araçları</h3>
+            <a href="/kredi/ihtiyac-kredisi">İhtiyaç Kredisi Hesaplama</a>
+            <a href="/matematik/yuzde-hesaplama">Yüzde Hesaplama</a>
+            <a href="/zaman/yas-hesaplama">Yaş Hesaplama</a>
+            <a href="/saglik/adet-gunu-hesaplama">Adet Günü Hesaplama</a>
+            <a href="/matematik/alan-hesaplama">Alan Hesaplama</a>
+            <a href="/egitim/lise-ortalama">Lise Ortalama Hesaplama</a>
+        </div>
+    </div>
+    
+    <script>
+        // Google Analytics tracking for 404 pages
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 - Sayfa Bulunamadı',
+                page_location: window.location.href
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Sunucu Hatası | Hesaplama Araçları</title>
+    <meta name="description" content="Geçici bir sunucu hatası oluştu. Lütfen daha sonra tekrar deneyin.">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            font-weight: bold;
+            opacity: 0.8;
+        }
+        h2 {
+            font-size: 2rem;
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1.1rem;
+            margin: 1.5rem 0;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin: 0 8px;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .links {
+            margin-top: 2rem;
+        }
+        .error-info {
+            margin-top: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: left;
+        }
+        .error-info h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>500</h1>
+        <h2>Sunucu Hatası</h2>
+        <p>Üzgünüz, geçici bir teknik sorun yaşıyoruz. Lütfen birkaç dakika sonra tekrar deneyin.</p>
+        
+        <div class="links">
+            <a href="/" class="btn">Ana Sayfa</a>
+            <a href="javascript:history.back()" class="btn">Geri Dön</a>
+            <a href="javascript:location.reload()" class="btn">Yenile</a>
+        </div>
+        
+        <div class="error-info">
+            <h3>Ne Yapabilirsiniz?</h3>
+            <ul>
+                <li>Sayfayı yenilemeyi deneyin</li>
+                <li>Birkaç dakika bekleyip tekrar deneyin</li>
+                <li>Ana sayfadan başlayın</li>
+                <li>Sorun devam ederse bizimle iletişime geçin</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Auto refresh after 30 seconds
+        setTimeout(function() {
+            location.reload();
+        }, 30000);
+        
+        // Google Analytics tracking for 500 errors
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'exception', {
+                description: '500 Server Error',
+                fatal: false
+            });
+        }
+    </script>
+</body>
+</html>
